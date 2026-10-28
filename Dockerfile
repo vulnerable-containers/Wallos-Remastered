@@ -1,5 +1,5 @@
-# Keep production rebuilds on the audited PHP 8.3.33 / Alpine 3.24 base.
-FROM php:8.3.33-fpm-alpine3.24@sha256:bf90236449d333cef008b1f01c72a3d4f11a6470a74629665e4c6b6158f03fc8
+# Keep production rebuilds on the patched PHP 8.3.36 / Alpine 3.24 base.
+FROM php:8.3.36-fpm-alpine3.24@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
 
 # Set working directory to /var/www/html
 WORKDIR /var/www/html

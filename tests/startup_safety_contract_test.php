@@ -83,7 +83,7 @@ try {
 
     $dockerfile = wallos_startup_contract_source('Dockerfile');
     wallos_startup_contract_assert(
-        strpos($dockerfile, 'php:8.3.33-fpm-alpine3.24@sha256:') !== false
+        strpos($dockerfile, 'php:8.3.36-fpm-alpine3.24@sha256:') !== false
             && strpos($dockerfile, 'apk upgrade') === false
             && strpos($dockerfile, 'imagick-3.8.1') !== false,
         'Production build inputs must keep the audited base and PECL version pinned.'
